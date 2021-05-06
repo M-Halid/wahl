@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
-          am i on GH ?
+          allright not on gh but Netlify ! 😅
         </h1>
         <a
           className="App-link"
