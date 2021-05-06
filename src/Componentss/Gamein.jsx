@@ -742,9 +742,9 @@ class Gamein extends Component {
                 <div id="top">
                     <span id="game" className="badge badge-info m-1" > Health <div id="can" > </div> {this.state.game}</span>
 
-                    <span id="game" className="badge badge-info m-1" >Player <br /> <br /> {this.props.playerName}</span>
+                    <span onClick={this.sor}  id="game" className="badge badge-info m-1" >Player <br /> <br /> {this.props.playerName}</span>
 
-                    <span onClick={this.sor} id="time" className="m-1 badge badge-info " > Time <img id="saat" src={time} alt="At" />
+                    <span  id="time" className="m-1 badge badge-info " > Time <img id="saat" src={time} alt="At" />
                         {this.state.time} </span> </div>
 
                 <div id="starbucks" >

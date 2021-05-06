@@ -234,7 +234,7 @@ tr{
     border-radius: 15px;
     color: whitesmoke;
     background-color: #115173;
-    height: 660px!important;
+    height: 672px!important;
     display: grid;
     grid-template-rows: 0.5fr 1fr 2fr;
 }
