@@ -3,6 +3,7 @@ import React, {
 } from 'react';
 import Gamein from './Gamein'
 import "./Game.css";
+import Sound from 'react-sound'
 import short from "./short.mp3"
 import click from "./click.gif"
 
@@ -72,9 +73,9 @@ class Signin extends Component {
         }, 3500);
         
 
-        let shortmusic = new Audio(short)
-        shortmusic.play();
-        shortmusic.volume = 0.03;
+        // let shortmusic = new Audio(short)
+        // shortmusic.play();
+        // shortmusic.volume = 0.03;
 
         //document.querySelector("audio").volume= 0.03
 
@@ -106,6 +107,12 @@ class Signin extends Component {
                 </div>
                 <Gamein playerName={this.state.inputName} renkler={this.changeColor} />
                 {/* <audio autoPlay loop allow="autoplay" ><source src={short} /> </audio> */}
+                <Sound
+                    url={short}
+                    playStatus={Sound.status.PLAYING}
+                    loop={true}
+                    volume={6}
+                     />   
 
 
             </div>);
