@@ -111,7 +111,7 @@ class Signin extends Component {
                     url={short}
                     playStatus={Sound.status.PLAYING}
                     loop={true}
-                    volume={6}
+                    volume={4}
                      />   
 
 

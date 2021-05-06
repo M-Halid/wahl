@@ -206,7 +206,7 @@ tr{
     border-radius: 15px;
     color: whitesmoke;
     background-color: #115173;
-    box-shadow: rgba(128, 128, 128, 0.719) 0px 0px 0px 850px;
+    /* box-shadow: rgba(128, 128, 128, 0.719) 0px 0px 0px 850px; */
     margin: auto !important;
 }
 
@@ -236,7 +236,7 @@ tr{
     background-color: #115173;
     height: 672px!important;
     display: grid;
-    grid-template-rows: 0.5fr 1fr 2fr;
+    /* grid-template-rows: 0.5fr 0.8fr 1.7fr; */
 }
 
 
