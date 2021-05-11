@@ -6,7 +6,7 @@ import "./Game.css";
 import Sound from 'react-sound'
 import short from "./short.mp3"
 import click from "./click.gif"
-import github from './GitHub-Mark-32px.png';
+import github from './ghicon.png';
 
 
 
@@ -107,8 +107,8 @@ class Signin extends Component {
 
                     </div>
 
-                   <a id="ghicon" href="https://github.com/M-Halid/wahl" target="_blank" rel="noopener noreferrer" > <img  src={github} alt="GH" />  </a>
-                <a id="ghub" href="https://github.com/M-Halid/wahl" target="_blank" rel="noopener noreferrer" >GitHub</a>
+                   <a id="ghicon" className="fadeIn" href="https://github.com/M-Halid/wahl" target="_blank" rel="noopener noreferrer" > <img  src={github} alt="GH" />  </a>
+                <a id="ghub" className="fadeIn" href="https://github.com/M-Halid/wahl" target="_blank" rel="noopener noreferrer" >GitHub</a>
                     
                 </div>
                 <Gamein playerName={this.state.inputName} renkler={this.changeColor} />

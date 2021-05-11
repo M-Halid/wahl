@@ -514,6 +514,9 @@ animation-duration: 5s;
 position: relative;
 bottom: -345px;
 margin: 0 0 0 9px;
+animation-fill-mode: both;
+background-repeat: no-repeat;
+animation-duration: 5s;
 }
 
 #ghub {
@@ -522,6 +525,9 @@ bottom: -355px;
 margin: 0;
 text-decoration: none;
 color: white;
+animation-fill-mode: both;
+background-repeat: no-repeat;
+animation-duration: 5s;
 }
 #ghub:hover{
     color: rgb(120, 33, 120);
