@@ -72,7 +72,7 @@ class Signin extends Component {
             click.style.display = "block"
             const like = document.querySelector("#likeThis")
             like.style.display = "block"
-        }, 3500);
+        }, 2500);
         
 
         // let shortmusic = new Audio(short)
@@ -85,6 +85,7 @@ class Signin extends Component {
 
 
     render() {
+        
         return (
             <div>
                 <div className="info" >

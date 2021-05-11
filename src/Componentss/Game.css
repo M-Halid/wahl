@@ -547,13 +547,14 @@ animation-duration: 5s;
 
 #likeThis{
     position: absolute;
-    bottom: 220px;
+    bottom: 240px;
     right: 220px;
     color:rgb(211, 120, 1);
     transform: rotate(-50deg);
     animation-duration: 3s;
     display: none;
-    font-weight: 600;
+    font-weight: bold;
+    font-family:cursive;
 
 
 }
