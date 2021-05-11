@@ -6,6 +6,8 @@ import "./Game.css";
 import Sound from 'react-sound'
 import short from "./short.mp3"
 import click from "./click.gif"
+import github from './GitHub-Mark-32px.png';
+
 
 
 
@@ -104,6 +106,10 @@ class Signin extends Component {
                         <div id="likeThis" className="fadeIn">Just like <br />That  </div>
 
                     </div>
+
+                   <a id="ghicon" href="https://github.com/M-Halid/wahl" target="_blank" rel="noopener noreferrer" > <img  src={github} alt="GH" />  </a>
+                <a id="ghub" href="https://github.com/M-Halid/wahl" target="_blank" rel="noopener noreferrer" >GitHub</a>
+                    
                 </div>
                 <Gamein playerName={this.state.inputName} renkler={this.changeColor} />
                 {/* <audio autoPlay loop allow="autoplay" ><source src={short} /> </audio> */}
@@ -111,10 +117,8 @@ class Signin extends Component {
                     url={short}
                     playStatus={Sound.status.PLAYING}
                     loop={true}
-                    volume={4}
-                     />   
-
-
+                    volume={4} />   
+               
             </div>);
     }
 }

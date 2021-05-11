@@ -463,6 +463,26 @@ animation-fill-mode: both;
 background-repeat: no-repeat;
 animation-duration: 5s;
 }
+
+#ghicon{
+position: relative;
+bottom: -345px;
+margin: 0 0 0 9px;
+}
+
+#ghub {
+position: relative;
+bottom: -355px;
+margin: 0;
+text-decoration: none;
+color: white;
+}
+#ghub:hover{
+    color: rgb(120, 33, 120);
+}
+
+
+
 #form{
     text-align: center;
     width: 50%;
