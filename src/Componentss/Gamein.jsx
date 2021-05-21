@@ -29,7 +29,8 @@ class Gamein extends Component {
         son: false,
         questionNr: [8, 6, 1, 3, 7, 4, 10, 9, 2, 5, 3, 7, 10, 5, 4, 2, 9, 8, 6, 1, 10, 4, 3, 2, 5, 6, 7, 8, 9, 10,],
         sorual: 0,
-        data: null
+        data: null,
+        bildi:false
 
 
 
@@ -271,6 +272,8 @@ class Gamein extends Component {
                 let audio2 = new Audio(win)
                 audio2.play()
                 audio2.volume = 0.01;
+                var fireym= document.querySelector("#frame")
+                fireym.style.transform = "rotate(360deg)"
 
             }
             if (this.state.game < 10) {
@@ -284,7 +287,8 @@ class Gamein extends Component {
                 let audio2 = new Audio(win)
                 audio2.play()
                 audio2.volume = 0.01;
-
+                var fireym1= document.querySelector("#frame")
+                fireym1.style.transform = "rotate(360deg)"
             }
 
 
@@ -401,7 +405,8 @@ class Gamein extends Component {
 
     starr = () => {
         this.setState({
-            score: this.state.score + 1
+            score: this.state.score + 1,
+            bildi : true
         })
         const asd = document.createElement("img")
         asd.setAttribute("src", star)
@@ -412,6 +417,7 @@ class Gamein extends Component {
         let audio = new Audio(point)
         audio.play()
         audio.volume = 0.2;
+       
     }
 
 
@@ -423,6 +429,7 @@ class Gamein extends Component {
         this.setState({
             bonus: false
         })
+
         this.setState({
             soru: true
         })
@@ -484,13 +491,31 @@ class Gamein extends Component {
         setTimeout(this.odul, 50)
     }
 
+    punish = () => { 
+        
+        if(this.state.bildi === false){
+        var fireym= document.querySelector("#frame")
+        fireym.style.transition = "all 0.5s ease"
+       
+        fireym.style.transform = "rotate(-180deg)"
+        
+        setTimeout(() => {
+            // fireym.style.transform = "rotate(90deg)"
+            fireym.style.transition = "all 0.5s ease"
+            fireym.style.transform = "rotate(0deg)"
+        }, 1500);
+    }
+
+    }
 
     odul = () => {
-
-
+        this.setState({
+            bildi : false
+        })
         if (parseInt(this.state.cevap) === 48) {
             this.starr()
         }
+        
         if (parseInt(this.state.cevap) === 4) {
             this.starr()
         }
@@ -518,7 +543,11 @@ class Gamein extends Component {
         if (this.state.cevap === "Zurich") {
             this.starr()
         }
+        setTimeout(() => {
+            this.punish()     
+        }, 100);
 
+       
     }
 
 
@@ -566,7 +595,7 @@ class Gamein extends Component {
     }
     reset = () => {
         this.setState({
-            game: 1
+            game: 50
         })
         this.setState({
             time: 60
@@ -588,6 +617,10 @@ class Gamein extends Component {
         document.querySelector("#bas").style.display = "none"
         document.querySelector("#starbucks").innerHTML = ""
         document.querySelector("#frame").style.transform = "rotate(360deg)"
+        document.querySelector("#frame").style.transition = "all 1.5s ease"
+        var can = document.querySelector("#can")
+        can.style.width = `50%`
+        can.style.backgroundColor = " rgb(103, 207, 5)"
 
 
     }
