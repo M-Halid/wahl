@@ -276,7 +276,7 @@ class Gamein extends Component {
                 fireym.style.transform = "rotate(360deg)"
 
             }
-            if (this.state.game < 10) {
+            if (this.state.game < 5) {
                 // localStorage.setItem(this.props.playerName, this.state.score)
                 this.setState({
                     son: true
