@@ -666,7 +666,7 @@ class Gamein extends Component {
             body: JSON.stringify(data),
             headers: {
                 "content-type": "application/json"
-            }
+            },{URL.Header("Access-Control-Allow-Origin")}
         }).then(response => response.json())
             .then(createdScore => {
                 this.setState({ plyersName: createdScore.PlayerName })
