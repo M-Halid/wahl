@@ -626,7 +626,7 @@ class Gamein extends Component {
     }
 
     listallscores = () => {
-        const URL = "https://halidgame.herokuapp.com/"
+        const URL = "https://mybackforwahl.web.app/"
         fetch(URL)
             .then(response => response.json())
             .then(score => {
@@ -652,7 +652,7 @@ class Gamein extends Component {
 
 
 
-        const URL = "https://halidgame.herokuapp.com/"
+        const URL = "https://mybackforwahl.web.app/"
 
         const playerName = this.props.playerName
         const score = this.state.score
