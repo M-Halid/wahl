@@ -91,7 +91,7 @@ class Signin extends Component {
                 <div className="info" >
                     <div id="mid">
                         <div>
-                            <br /><h3 id="hi" className="p-1 text-center" > Hi Everyone! </h3> </div>
+                            <br /><h3 id="hi" className="p-1 text-center" > Hallo Leude! </h3> </div>
                         <br />
                         <form action="" >
                             <p className="text-center" > The only thing that you should do is pushing <span id="constant">consecutive</span> on the "Click it!" button then answer the Questions <br />  </p>
